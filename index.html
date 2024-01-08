@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Term Date Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>School Term Date Calculator</h1>
+    <p>So I know that probably a bazillion of these exist online, but I can't be bothered to find them, but I can be bothered to spend 10 minutes proompting ChatGPT to make a quick website to calculate them from me. For some reason, it's just a day ahead???? So I unfortunately had to do some thinking and edit the javascript :(</p>
+    <p>Nevertheless, enjoy I guess :)</p>
+    <p>And yes, ChatGPT made almost the entirety of this, except for obviously these paragraphs of text and the very small changes I made to its js. Yes, that does mean it made this CSS! Which I have to admit is better made than my CSS :|</p>
+    <label for="startDate">Enter Start Date:</label>
+    <input type="date" id="startDate">
+    <br>
+    <label for="week">Select Week:</label>
+    <input type="number" id="week" min="1" placeholder="Week">
+    <label for="day">Select Day:</label>
+    <select id="day">
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+      <option value="friday">Friday</option>
+    </select>
+    <br>
+    <button onclick="calculateDate()">Calculate Date</button>
+    <p id="result"></p>
+    <div class='imgdiv'>
+      <img src="vectorsyumyum.png" alt="Aww the vectors didnt load :("> 
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
